@@ -12,21 +12,6 @@ class Sshmgr < Formula
     bin.install "sshmgr.sh" => "sshmgr"
   end
 
-  def post_install
-    hosts_dir = Pathname.new(ENV["HOME"])/".config/sshmgr"
-    hosts_dir.mkpath
-    hosts_file = hosts_dir/"known_hosts.json"
-    unless hosts_file.exist?
-      hosts_file.write <<~EOS
-      {
-        "hosts": [
-          {"name": "example", "host": "127.0.0.1", "user": "user", "port": 22}
-        ]
-      }
-      EOS
-    end
-  end
-
   test do
     system "#{bin}/sshmgr", "--help"
   end
