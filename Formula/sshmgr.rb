@@ -1,8 +1,8 @@
 class Sshmgr < Formula
   desc "A bash based SSH host manager for managing SSH connections"
   homepage "https://github.com/PyGuy-Programming/sshmgr"
-  url "https://github.com/PyGuy-Programming/sshmgr/archive/refs/tags/v2.3.1.tar.gz"
-  sha256 "609f4d0396a889dcacef7023961b22b97b9da4fe80a167369bb5830ca179c97a"
+  url "https://github.com/PyGuy-Programming/sshmgr/archive/refs/tags/v2.4.0.tar.gz"
+  sha256 "0badfd503beb2dbe67760e3b033a060b57ee861cba09cc095845bf99b67c5f75"
   license "MIT"
 
   depends_on "fzf"
